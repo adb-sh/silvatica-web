@@ -8,9 +8,9 @@ import postcss from "lume/plugins/postcss.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import sass from "lume/plugins/sass.ts";
 import feed from "lume/plugins/feed.ts";
-import * as colors from "https://esm.sh/twind@0.16.19/colors";
-import daisyui from "npm:daisyui";
-import themes from "https://esm.sh/daisyui/src/theming/themes";
+// import * as colors from "https://esm.sh/twind@0.16.19/colors";
+import daisyui from "npm:daisyui@4";
+// import themes from "https://esm.sh/daisyui/src/theming/themes";
 import anchor from "npm:markdown-it-anchor";
 import metas from "lume/plugins/metas.ts";
 import lightningCSS from "lume/plugins/lightningcss.ts";
@@ -18,7 +18,7 @@ import lightningCSS from "lume/plugins/lightningcss.ts";
 const site = lume(
   {
     src: "./src",
-    location: new URL("https://cdt-techhub.adb-sh.deploy.fish/"),
+    location: new URL("https://silvatica-web.adb-sh.deploy.fish/"),
   },
   {
     markdown: {
