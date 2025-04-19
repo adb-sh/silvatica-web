@@ -24,7 +24,7 @@ html {
 [data-markdown="true"] {
   a {
     text-decoration: underline;
-    @apply text-secondary;
+    @apply text-info;
   }
   ul {
     margin: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -45,7 +45,7 @@ html {
     margin-top: 0.8em;
     margin-bottom: 0.6em;
     scroll-margin-top: 5rem;
-    @apply text-primary relative;
+    @apply text-base-content relative;
     &:hover,
     &:focus-within {
       .header-anchor {

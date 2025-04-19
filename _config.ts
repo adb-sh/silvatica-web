@@ -10,7 +10,7 @@ import sass from "lume/plugins/sass.ts";
 import feed from "lume/plugins/feed.ts";
 // import * as colors from "https://esm.sh/twind@0.16.19/colors";
 import daisyui from "npm:daisyui@4";
-// import themes from "https://esm.sh/daisyui/src/theming/themes";
+import themes from "https://esm.sh/daisyui@4/src/theming/themes";
 import anchor from "npm:markdown-it-anchor";
 import metas from "lume/plugins/metas.ts";
 import lightningCSS from "lume/plugins/lightningcss.ts";
@@ -63,17 +63,21 @@ site
         plugins: [daisyui],
         daisyui: {
           themes: [
-            // {
-            //   custom: {
-            //     ...themes.cupcake,
-            //     accent: "#22c55e",
-            //     primary: "#ffa640",
-            //   },
-            // },
+            {
+              custom: {
+                ...themes.black,
+                primary: themes.forest.primary,
+                secondary: themes.forest.secondary,
+                info: themes.coffee.info,
+                success: themes.coffee.success,
+                warning: themes.coffee.warning,
+                error: themes.coffee.error,
+              },
+            },
             // "nord",
-            "black",
+            "custom",
           ],
-          darkTheme: "black",
+          darkTheme: "custom",
         },
       },
     })
