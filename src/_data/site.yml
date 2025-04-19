@@ -1,0 +1,30 @@
+title: "Silvatica Festival"
+shortTitle: "Silvatica"
+slug: "silvatica"
+description: "Silvatica Festival"
+extraNavItems:
+  # - title: Tickets
+  #   url: "https://tickets.silvatica.site"
+  #   menu:
+  #     header: true
+  #     headerIndex: 1
+  - title: Info
+    url: "/#info"
+    menu:
+      header: true
+      headerIndex: 1
+  - title: About Us
+    url: "/#about-us"
+    menu:
+      header: true
+      headerIndex: 2
+  - title: CoC
+    url: "/#coc"
+    menu:
+      header: true
+      headerIndex: 3
+  - title: FAQ
+    url: "/#faq"
+    menu:
+      header: true
+      headerIndex: 4

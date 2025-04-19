@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/github-dark.min.css";
+@import "https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css";
+@import "./fonts.css";
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.drawer {
+  .dropdown {
+    &:focus-within {
+      .dropdown-content {
+        @apply relative;
+      }
+    }
+  }
+}
+
+[data-markdown="true"] {
+  a {
+    text-decoration: underline;
+    @apply text-secondary;
+  }
+  ul {
+    margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+    list-style-type: disc;
+    list-style: disc;
+    ul {
+      margin: 0 1rem;
+    }
+  }
+  table {
+    @apply table;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
+    scroll-margin-top: 5rem;
+    @apply text-primary relative;
+    &:hover,
+    &:focus-within {
+      .header-anchor {
+        @apply opacity-100;
+      }
+    }
+  }
+  .header-anchor {
+    @apply absolute left-[-1em] no-underline text-secondary opacity-0 duration-300;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  img {
+    @apply my-2 inline-flex rounded max-w-full;
+  }
+
+  p {
+    @apply my-3;
+  }
+
+  hr {
+    @apply my-2;
+  }
+
+  pre {
+    @apply mockup-code;
+    code {
+      background: unset !important;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+site: "=site.title"
+# twitter: "@username"
+# fediverse: "@username@mastodon.social"
+title: "=title"
+icon: /favicon-32x32.png
+lang: en
+description: "=excerpt || =description || =site.description"
+image: "=imgUrl"
+robots: true
+generator: true
+color: "#38bdf8"

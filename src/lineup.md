@@ -1,0 +1,12 @@
+---
+layout: Markdown.tsx
+title: Lineup
+menu:
+  header: true
+  headerIndex: 5
+---
+
+
+## 🎶 Lineup
+
+Announcing soon — expect soul-soothing beats, local legends, and forest-shaking headliners.

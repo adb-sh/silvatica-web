@@ -1,0 +1,65 @@
+---
+layout: Default.tsx
+title: Blog
+---
+
+<h1 class="my-8 text-5xl">{title}</h1>
+
+<div class="flex flex-col gap-4 my-5">
+  {page.data.results.map((page) =>  page.event ? (
+    <a href={page.url} alt={page.title}>
+      <comp.EventListItem page={page} />
+    </a>
+  ) : (
+    <a href={page.url} alt={page.title}>
+      <comp.BlogListItem page={page} />
+    </a>
+  ))}
+</div>
+
+  <nav class="flex flex-row gap-2">
+  { page.data.pagination && (
+  <ul class="pagination join">
+    {page.data.pagination.previous ? (
+      <li>
+        <a
+          class="btn join-item"
+          href={`../${page.data.pagination.previous}`}
+        >
+          &laquo;
+        </a>
+      </li>
+    ) : (
+      <li>
+        <a class="btn btn-primary join-item btn-disabled">&laquo;</a>
+      </li>
+    )}
+    {new Array(page.data.pagination.totalPages).fill().map((_, index) => (
+      <li>
+        <a class={`join-item btn ${ page.data.pagination.page === index + 1 ? "btn-primary" : "" }`} href={`../${index + 1}`}>
+          {index + 1}
+        </a>
+      </li>
+    ))}
+    {page.data.pagination.next ? (
+      <li>
+        <a
+          class="btn join-item"
+          href={`../${page.data.pagination.next}`}
+        >
+          &raquo;
+        </a>
+      </li>
+    ) : (
+      <li>
+        <a class="btn btn-secondary join-item btn-disabled">&raquo;</a>
+      </li>
+    )}
+  </ul>
+  )}
+  {page.data.rss && (
+    <a class="btn btn-outline" href={page.data.rss}>
+      RSS-Feed
+    </a>
+  )}
+</nav>

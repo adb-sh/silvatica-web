@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "lume": "deno run --unstable -A build.ts",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "lock": "deno cache --lock-write build.ts"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.4.3/",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.6.3/"
+  }
+}

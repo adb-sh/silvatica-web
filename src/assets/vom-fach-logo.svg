@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_7" data-name="Ebene 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 533 253.5">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: GillSans, 'Gill Sans';
+        font-size: 100px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_59-2);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_59);
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        stroke-width: 3px;
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_59" data-name="Unbenannter Verlauf 59" x1="5395.51" y1="57.9" x2="5471.51" y2="57.9" gradientTransform="translate(5823.94) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffdea8"/>
+      <stop offset=".22" stop-color="#ffc6a8" stop-opacity=".76"/>
+      <stop offset=".6" stop-color="#ff9eaa" stop-opacity=".36"/>
+      <stop offset=".87" stop-color="#ff84ab" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#ff7bac" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_59-2" data-name="Unbenannter Verlauf 59" x1="60.44" y1="147.79" x2="238.9" y2="147.79" gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#Unbenannter_Verlauf_59"/>
+  </defs>
+  <ellipse class="cls-6" cx="390.44" cy="57.9" rx="38" ry="33.6"/>
+  <ellipse class="cls-5" cx="149.67" cy="147.79" rx="89.23" ry="82.35"/>
+  <line class="cls-2" x1="123.26" y1="21.95" x2="123.26" y2="231.45"/>
+  <line class="cls-2" x1="228.88" y1="22.02" x2="228.88" y2="231.52"/>
+  <line class="cls-2" x1="238.15" y1="21.67" x2="238.15" y2="231.17"/>
+  <line class="cls-2" x1="59.37" y1="21.68" x2="59.37" y2="231.18"/>
+  <line class="cls-2" x1="289.74" y1="22.35" x2="289.74" y2="231.85"/>
+  <line class="cls-2" x1="491.81" y1="22.84" x2="491.81" y2="232.34"/>
+  <line class="cls-2" x1="428.94" y1="22.7" x2="428.94" y2="232.2"/>
+  <line class="cls-2" x1="411.94" y1="21.7" x2="411.94" y2="231.2"/>
+  <line class="cls-2" x1="351.94" y1="22.7" x2="351.94" y2="232.2"/>
+  <line class="cls-2" x1="27.76" y1="117.95" x2="507.76" y2="117.95"/>
+  <line class="cls-2" x1="27.76" y1="91.95" x2="507.76" y2="91.95"/>
+  <line class="cls-2" x1="27.76" y1="64.95" x2="507.76" y2="64.95"/>
+  <line class="cls-2" x1="27.76" y1="51.95" x2="507.76" y2="51.95"/>
+  <line class="cls-2" x1="184.35" y1="22.79" x2="184.35" y2="232.29"/>
+  <line class="cls-2" x1="174.99" y1="21.91" x2="174.99" y2="231.41"/>
+  <rect class="cls-4" x="28.9" y="22.79" width="477.52" height="208.86"/>
+  <path d="M123.15,118.48h60.02v14.34h-43.91v31.42h43.91v14.34h-43.91v52.45h-16.11v-112.55Z"/>
+  <path d="M228.13,117.84h11.32l50.47,113.2h-16.49l-15-33.35h-48.02l-14.06,33.35h-16.56l48.34-113.2ZM251.8,183.34l-18.16-40.77-16.84,40.77h35Z"/>
+  <path d="M391.64,203.93v17.72c-11.82,6.45-25.46,8.67-40.93,8.67-12.57,0-23.23-1.52-31.99-6.57-8.75-5.05-15.68-12-20.79-20.87-5.1-8.86-7.65-18.45-7.65-28.76,0-16.38,5.84-30.16,17.52-41.33,11.68-11.17,26.97-14.55,44.1-14.55,11.82,0,24.07.88,38.52,7.06v17.32c-13.16-7.52-26.02-11.28-38.59-11.28s-23.59,4.07-32.11,12.21c-8.51,8.14-12.77,18.33-12.77,30.58s4.19,22.51,12.57,30.45c8.38,7.95,19.09,11.92,32.15,11.92s26.96-4.19,39.96-12.57Z"/>
+  <path d="M491.82,118.48h16.11v112.55h-16.11v-48.98h-63.24v48.98h-16.11v-112.55h16.11v48.66h63.24v-48.66Z"/>
+  <text class="cls-1" transform="translate(28.97 91.31)"><tspan class="cls-7" x="0" y="0">V</tspan><tspan x="56.4" y="0">OM</tspan></text>
+  <rect x="122.91" y="118.24" width="61" height="1"/>
+  <rect x="181.91" y="118.24" width="2" height="14"/>
+  <rect class="cls-3" x="138.41" y="177.74" width="45" height="3"/>
+  <rect class="cls-3" x="182.41" y="164.74" width="1" height="16"/>
+  <rect class="cls-3" x="175.41" y="88.74" width="8" height="3"/>
+  <rect class="cls-3" x="229.41" y="88.74" width="8" height="3"/>
+  <rect class="cls-3" x="492.41" y="118.74" width="13" height="1"/>
+  <rect class="cls-3" x="412.41" y="118.74" width="17" height="0"/>
+  <rect class="cls-3" x="412.41" y="118.74" width="4" height="113"/>
+  <rect x="183.91" y="132.24" width="0" height="1"/>
+  <rect x="181.91" y="132.24" width="2" height=".58"/>
+</svg>
