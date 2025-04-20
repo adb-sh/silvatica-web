@@ -103,7 +103,7 @@
     "npm:preact-render-to-string@6.0.3": "6.0.3_preact@10.13.2",
     "npm:preact-render-to-string@6.5.11": "6.5.11_preact@10.13.2",
     "npm:preact-render-to-string@6.5.5": "6.5.5_preact@10.13.2",
-    "npm:preact@*": "10.19.3",
+    "npm:preact@*": "10.25.1",
     "npm:preact@10.13.2": "10.13.2",
     "npm:preact@10.22.1": "10.22.1",
     "npm:preact@10.25.1": "10.25.1",
@@ -2937,9 +2937,6 @@
     "preact@10.13.2": {
       "integrity": "sha512-q44QFLhOhty2Bd0Y46fnYW0gD/cbVM9dUVtNTDKPcdXSMA7jfY+Jpd6rk3GB0lcQss0z5s/6CmVP0Z/hV+g6pw=="
     },
-    "preact@10.19.3": {
-      "integrity": "sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ=="
-    },
     "preact@10.22.1": {
       "integrity": "sha512-jRYbDDgMpIb5LHq3hkI0bbl+l/TQ9UnkdQ0ww+lp+4MMOdqaUYdFc5qeyP+IV8FAd/2Em7drVPeKdQxsiWCf/A=="
     },
@@ -4449,10 +4446,5 @@
     "https://esm.sh/v135/twind@0.16.19/denonext/colors.js": "83f03464068ed76b7200bce6fab29376421ab5506622a3fa70a459a4e093e837",
     "https://wilsonl.in/minify-html/deno/0.10.3/index.js": "c8124516a6369ef9293473143d462b1592cf19aa25b110abd27d3cbb40124030",
     "https://wilsonl.in/minify-html/deno/0.15.0/index.js": "8e7ee5067ca84fb5d5a1f33118cac4998de0b7d80b3f56cc5c6728b84e6bfb70"
-  },
-  "workspace": {
-    "dependencies": [
-      "npm:preact@*"
-    ]
   }
 }
