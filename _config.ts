@@ -14,6 +14,7 @@ import themes from "https://esm.sh/daisyui@4/src/theming/themes";
 import anchor from "npm:markdown-it-anchor";
 import metas from "lume/plugins/metas.ts";
 import lightningCSS from "lume/plugins/lightningcss.ts";
+import googleFonts from "lume/plugins/google_fonts.ts";
 
 const site = lume(
   {
@@ -45,6 +46,12 @@ site
   .use(mdx())
   .use(pagefind())
   .use(code_highlight())
+  .use(googleFonts({
+    fonts: {
+      "text": "https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap",
+      "stencil": "https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap",
+    }
+  }))
   .use(sass())
   .use(
     tailwindcss({
@@ -57,7 +64,8 @@ site
             xl: "1100px",
           },
           fontFamily: {
-            sans: ["Montserrat", "sans-serif"],
+            sans: ["text", "sans-serif"],
+            mono: ["stencil", "mono"]
           },
         },
         plugins: [daisyui],

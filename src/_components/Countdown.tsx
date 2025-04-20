@@ -4,9 +4,9 @@ export default () => {
       <div id="countdown" class="grid auto-cols-max grid-flow-col gap-5 text-center">
         <div class="flex flex-col">
           <span class="countdown font-mono text-5xl">
-            <span id="months" style="--value:99;" aria-live="polite" aria-label="99">99</span>
+            <span id="weeks" style="--value:99;" aria-live="polite" aria-label="99">99</span>
           </span>
-          months
+          weeks
         </div>
         <div class="flex flex-col">
           <span class="countdown font-mono text-5xl">

@@ -4362,6 +4362,7 @@
     "https://deno.land/x/lume@v2.4.3/mod.ts": "f93dcbc0ccb7a9e6cab93d0e8f1f0643b112f3084bedc603379dc1b47d7d380d",
     "https://deno.land/x/lume@v2.4.3/plugins/code_highlight.ts": "723b114f98e97c3a2d65890638109d144e1adbd7f474f73d05dac5f47d0851c8",
     "https://deno.land/x/lume@v2.4.3/plugins/feed.ts": "f95a77ec53b4e72b1d4fd5c952ec57281dbd16e2bb5ad7ec35c45f2f787def28",
+    "https://deno.land/x/lume@v2.4.3/plugins/google_fonts.ts": "d9bc4de6f0ff8df132555a77bed1dfff9cb72088055f3644cad2bd14a7430921",
     "https://deno.land/x/lume@v2.4.3/plugins/json.ts": "67e5e2e00f8e8640f33c1f97a2bf82a7c97a67a838804637b87b16b72f9042e1",
     "https://deno.land/x/lume@v2.4.3/plugins/jsx_preact.ts": "4b8e652b777b9b8343e40d9803ae1d4c48e72a29b7e5be6f4125712a366431f6",
     "https://deno.land/x/lume@v2.4.3/plugins/lightningcss.ts": "d8a4b4355375567b78f5e298dba243a70c94614314679d9592eb4287c709a449",
@@ -4446,5 +4447,10 @@
     "https://esm.sh/v135/twind@0.16.19/denonext/colors.js": "83f03464068ed76b7200bce6fab29376421ab5506622a3fa70a459a4e093e837",
     "https://wilsonl.in/minify-html/deno/0.10.3/index.js": "c8124516a6369ef9293473143d462b1592cf19aa25b110abd27d3cbb40124030",
     "https://wilsonl.in/minify-html/deno/0.15.0/index.js": "8e7ee5067ca84fb5d5a1f33118cac4998de0b7d80b3f56cc5c6728b84e6bfb70"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:preact@*"
+    ]
   }
 }
