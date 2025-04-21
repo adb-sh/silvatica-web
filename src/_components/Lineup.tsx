@@ -85,7 +85,7 @@ export default () => {
 
   return (
     <>
-      <ul class="timeline timeline-compact timeline-vertical">
+      {/* <ul class="timeline timeline-compact timeline-vertical">
         <li>
           <div class="timeline-start">1984</div>
           <div class="timeline-middle">
@@ -154,21 +154,22 @@ export default () => {
                       >
                         <defs>
                           <mask id={`mask-lineup-${index}`}>
-                            <polyline
-                              points={points}
-                              stroke-width="200"
-                              fill="none"
-                              stroke="#ffffff"
-                              stroke-dasharray="20000"
-                              stroke-dashoffset="20000"
-                            />
+                            <filter id={`blur-${index}`} x="-50%" y="-50%" width="200%" height="200%">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+                            </filter>
+                            <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                            <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                            <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                            <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                            <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                            <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
                           </mask>
                         </defs>
                         <image
                           width="100%"
                           height="100%"
                           preserveAspectRatio="xMidYMid slice"
-                          style={`mask: url(#mask-lineup-${index});`}
+                          style={`mask: url(#mask-lineup-${index});`}                  
                           href={item.src}
                         />
                       </svg>
@@ -179,7 +180,7 @@ export default () => {
             </li>
           </>
         ))}
-      </ul>
+      </ul> */}
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-16">
         {lineup.map((item, index) => (
           <>
