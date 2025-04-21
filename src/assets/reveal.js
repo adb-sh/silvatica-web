@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
   document.querySelectorAll(".reveal-svg").forEach((svg) => {
-    const polyline = svg.querySelector("polyline");
+    const circles = svg.querySelectorAll("circle");
     const img = svg.querySelector("image");
     img.onload = () => {
-      gsap.fromTo(polyline,
-        { strokeDashoffset: 20000 },
+      gsap.fromTo(circles,
+        { r: 0 },
         {
-          strokeDashoffset: 0,
+          r: 1500,
           duration: 3,
           ease: "power1.inOut",
           scrollTrigger: {

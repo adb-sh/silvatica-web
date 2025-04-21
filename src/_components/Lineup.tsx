@@ -75,6 +75,9 @@ export default () => {
     return `${item[0].toFixed()},${item[1].toFixed()}`
   }).join('\n'))
 
+  const randomX = () => Math.round(Math.random() * 1000)
+  const randomY = () => Math.round(Math.random() * 1500)
+
   return (
     <>
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-16">
@@ -101,21 +104,22 @@ export default () => {
               <svg viewBox="0 0 1000 1500" xmlns="http://www.w3.org/2000/svg" class="reveal-svg order-1 md:order-2 aspect-ratio-2/3 height-[40rem] max-w-full max-h-full">
                 <defs>
                   <mask id={`mask-lineup-${index}`}>
-                    <polyline
-                      points={points}
-                      stroke-width="200"
-                      fill="none"
-                      stroke="#ffffff"
-                      stroke-dasharray="20000"
-                      stroke-dashoffset="20000"
-                    />
+                    <filter id={`blur-${index}`} x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+                    </filter>
+                    <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                    <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                    <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                    <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                    <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
+                    <circle cx={randomX()} cy={randomY()} r="0" fill="#ffffff" filter={`url(#blur-${index})`}></circle>
                   </mask>
                 </defs>
                 <image
                   width="100%"
                   height="100%"
                   preserveAspectRatio="xMidYMid slice"
-                  style={`mask: url(#mask-lineup-${index});`}
+                  style={`mask: url(#mask-lineup-${index});`}                  
                   href={item.src}
                 />
               </svg>
