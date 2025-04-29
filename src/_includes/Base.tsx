@@ -35,6 +35,8 @@ export default ({ title, children, search, site, comp, user }) => (
       <script src="/regl.min.js"></script>
       <script src="/scrollSpiral.glsl" type="x-shader/x-fragment" id="fragmentShader"></script>
       <script src="/demo2.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     </head>
     <body
       class="bg-body text-text flex flex-col justify-between min-h-screen relative"
