@@ -5,7 +5,7 @@ menu:
   header: false
 ---
 
-<div class="h-screen w-full relative isolate bg-cyan-900">
+<div class="h-screen w-full relative isolate bg-cyan-900 shadow-2xl">
   <canvas id="webgl" class="w-full h-full absolute opacity-60"></canvas>
   <div class="relative h-full mix-blend-difference">
     <div class="sticky flex flex-col items-center top-1/4 py-20 px-5 gap-10">
@@ -15,6 +15,27 @@ menu:
   </div>
 </div>
 
+
+<div class="h-[200vh] relative mt-[-100vh] z-[-1] shadow-2xl">
+  <div class="bg-amber-900 sticky top-0">
+    <video autoplay muted loop class="opacity-70 h-screen w-full object-cover">
+      <source src="/media/videos/recap-2024-day-02.webm" />
+    </video>
+    <div class="absolute bottom-0 mix-blend-overlay w-full p-10 text-center">
+      <h2 class="font-mono text-5xl">Workshops</h2>
+    </div>
+  </div>
+</div>
+<div class="h-[200vh] relative mt-[-100vh] z-[-2]">
+  <div class="bg-amber-900 sticky top-0">
+    <video autoplay muted loop class="opacity-70 h-screen w-full object-cover">
+      <source src="/media/videos/recap-2024-day-03.webm" />
+    </video>
+  </div>
+  <div class="absolute bottom-0 mix-blend-color-dodge w-full p-10 text-center">
+    <h2 class="font-mono text-5xl">Techno</h2>
+  </div>
+</div>
 
 <div class="container mx-auto">
   <div class="flex m-4">
