@@ -9,7 +9,7 @@
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
-  L.marker([lat,lon]).addTo(map).openPopup();
+  // L.marker([lat,lon]).addTo(map).openPopup();
 
   L.polygon([
     [49.10385112133803, 9.799948565000571],
@@ -33,6 +33,6 @@
     iconSize: [30, 30],
     iconAnchor: [15, 15],
   });
-  L.marker([49.102461404450686, 9.800525107587717], {icon: myIcon}).addTo(map);
+  L.marker([49.102461404450686, 9.800525107587717], {icon: myIcon, alt: "WC"}).addTo(map).bindPopup("<b>WC</b>", {minWidth: 20});
 
 })();
