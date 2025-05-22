@@ -26,5 +26,13 @@
     [49.10205276859128, 9.802195524691394],
     [49.101160228013285, 9.80062657734916],
     [49.10201837581494, 9.799337305889434]
-  ]).addTo(map).bindPopup("<b>Zeltplatz</b>").openPopup()
+  ]).addTo(map).bindPopup("<b>Zeltplatz</b>")
+
+  const myIcon = L.icon({
+    iconUrl: 'wc-icon.svg',
+    iconSize: [30, 30],
+    iconAnchor: [15, 15],
+  });
+  L.marker([49.102461404450686, 9.800525107587717], {icon: myIcon}).addTo(map);
+
 })();
