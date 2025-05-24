@@ -28,7 +28,7 @@ menu:
 </div> */}
 <div class="h-[200vh] relative mt-[-100vh] z-[-2]">
   <div class="bg-amber-900 sticky top-0">
-    <video autoplay muted loop playsinline class="opacity-70 h-screen w-full object-cover">
+    <video autoplay muted loop playsinline class="opacity-80 h-screen w-full object-cover">
       <source src="/media/videos/recap-2024-day-03.webm" />
     </video>
   </div>
@@ -53,29 +53,46 @@ menu:
 
         Announcing soon — expect soul-soothing beats, local legends, and forest-shaking headliners. */}
 
-
-        <h2 id="info">🏕️ Info</h2>
+        <h2 id="info" class="text-center">Info</h2>
 
         - **Dates:** August 15–17, 2025  
         - **Location:** <a href="#anreise">Hasenbühl, in Schwäbisch Hall Hessental</a>
 
-        <h2 id="about-us">🌱 About Us</h2>
-        Das Silvatica Festival lädt ein zu einem Wochenende voller Musik, Kunst und gemeinsamer Erlebnisse. Es ist ein Ort für kunst- und musikbegeisterte Menschen, um Zeit miteinander zu verbringen, zu genießen und sich auszutauschen. Im Mittelpunkt steht dabei die Musik: Ab dem Mittag spielen verschiedene Live-Bands und Künstler*innen, bevor elektronische Klänge die Nacht zum Leben erwecken.
 
-        Neben dem musikalischen Programm erwartet euch ein vielfältiges Angebot an Workshops und kreativen Aktivitäten – von Siebdruck über Yoga bis hin zu liebevoll gestalteten Bastelaktionen. Wer zwischendurch eine Pause braucht, kann sich auf unserem gemütlich eingerichteten Gelände zurücklehnen, bei einer Tasse Kaffee, einem Stück Pizza oder einem kühlen Getränk entspannen und die Atmosphäre genießen.
+        <comp.Divider />
 
-        Ein besonderes Anliegen ist uns die Förderung lokaler Kunst- und Kulturschaffender. So sind unter anderem das Orte- und das La Volta-Kollektiv Teil unseres Festivals und bereichern das Programm mit ihren Beiträgen.
+        <h2 id="about-us" class="text-center">About Us</h2>
+        <div class="flex flex-col gap-10 text-lg">
+          <div class="flex items-center lg:gap-10 max-lg:flex-col-reverse">
+            Das Silvatica Festival lädt ein zu einem Wochenende voller Musik, Kunst und gemeinsamer Erlebnisse. Es ist ein Ort für kunst- und musikbegeisterte Menschen, um Zeit miteinander zu verbringen, zu genießen und sich auszutauschen. Im Mittelpunkt steht dabei die Musik: Ab dem Mittag spielen verschiedene Live-Bands und Künstler*innen, bevor elektronische Klänge die Nacht zum Leben erwecken.
+            <img class="h-48 aspect-[3/2] object-cover max-lg:w-full" src="/media/images/photo_5199641241837496798_y.jpg" />
+          </div>
+          <div class="flex items-center lg:gap-10 max-lg:flex-col">
+            <img class="h-64 aspect-[3/2] object-cover max-lg:w-full" src="/media/images/photo_5199641241837496797_y.jpg" />
+            Neben dem musikalischen Programm erwartet euch ein vielfältiges Angebot an Workshops und kreativen Aktivitäten – von Siebdruck über Yoga bis hin zu liebevoll gestalteten Bastelaktionen. Wer zwischendurch eine Pause braucht, kann sich auf unserem gemütlich eingerichteten Gelände zurücklehnen, bei einer Tasse Kaffee, einem Stück Pizza oder einem kühlen Getränk entspannen und die Atmosphäre genießen.
+          </div>
+          <div class="flex items-center lg:gap-10 max-lg:flex-col-reverse">
+            Ein besonderes Anliegen ist uns die Förderung lokaler Kunst- und Kulturschaffender. So sind unter anderem das Orte- und das La Volta-Kollektiv Teil unseres Festivals und bereichern das Programm mit ihren Beiträgen.
+            <img class="h-64 aspect-[2/1] object-cover max-lg:w-full" src="/media/images/photo_5199641241837496799_y.jpg" />
+          </div>
+          <div class="flex items-center lg:gap-10 max-lg:flex-col">
+            <img class="h-64 aspect-square object-cover max-lg:w-full" src="/media/images/photo_5199641241837496787_y.jpg" />
+            Silvatica spannt einen Bogen zwischen gemeinschaftlichem Tun, entspannter Stimmung und musikalischem Erleben. Offenheit, Gemeinschaft und ein unvergessliches Miteinander stehen für uns im Zentrum. Das Festival ist ein Herzensprojekt – von Freund*innen für Freund*innen und alle, die dazukommen möchten.
+          </div>
+          <div class="text-center">
+            Wir möchten einen Raum schaffen, in dem sich alle frei, sicher und willkommen fühlen können.
+          </div>
+        </div>
 
-        Silvatica spannt einen Bogen zwischen gemeinschaftlichem Tun, entspannter Stimmung und musikalischem Erleben. Offenheit, Gemeinschaft und ein unvergessliches Miteinander stehen für uns im Zentrum. Das Festival ist ein Herzensprojekt – von Freund*innen für Freund*innen und alle, die dazukommen möchten.
+        {/* <comp.ImageCarousel /> */}
 
-        Wir möchten einen Raum schaffen, in dem sich alle frei, sicher und willkommen fühlen können.
+        <comp.Divider />
+        <h2 id="coc" class="text-center">Code of Conduct</h2>
+        <div class="text-center">
+          Für ein sicheres, respektvolles und schönes Miteinander
 
-        <comp.ImageCarousel />
-
-        <h2 id="coc">📜 Code of Conduct</h2>
-        Für ein sicheres, respektvolles und schönes Miteinander
-
-        Das Silvatica Festival ist ein Raum für Begegnung, Musik, Kreativität und Gemeinschaft. Damit sich alle wohlfühlen können, möchten wir ein paar grundlegende Werte und Regeln mit euch teilen:
+          Das Silvatica Festival ist ein Raum für Begegnung, Musik, Kreativität und Gemeinschaft. Damit sich alle wohlfühlen können, möchten wir ein paar grundlegende Werte und Regeln mit euch teilen:
+        </div>
 
         ### Respekt und Achtsamkeit
 
@@ -105,9 +122,10 @@ menu:
 
         Bitte behandelt das Gelände mit Sorgfalt. Lasst keinen Müll zurück, nutzt die vorgesehenen Sanitäranlagen und helft mit, den Ort sauber und schön zu halten.
 
-        <h2 id="faq">❓FAQ</h2>
+        <comp.Divider />
+        <h2 id="faq">FAQ</h2>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">🎟️ Tickets</h3>
+        <h3 class="text-xl font-bold mt-8 mb-4">Tickets</h3>
         <div class="join join-vertical bg-base-100">
 
           <div class="collapse collapse-arrow join-item border border-base-300">
@@ -135,7 +153,7 @@ menu:
           </div>
         </div>
 
-        <h3 class="text-xl font-bold mt-8 mb-4" id="anreise">🚌 Anreise</h3>
+        <h3 class="text-xl font-bold mt-8 mb-4" id="anreise">Anreise</h3>
         <div class="join join-vertical bg-base-100">
 
           <div class="collapse collapse-arrow join-item border border-base-300">
@@ -184,7 +202,7 @@ menu:
           </div>
         </div>
 
-        <h3 class="text-xl font-bold mt-8 mb-4" id="camping">🏕️ Camping</h3>
+        <h3 class="text-xl font-bold mt-8 mb-4" id="camping">Camping</h3>
         <div class="join join-vertical bg-base-100">
 
           <div class="collapse collapse-arrow join-item border border-base-300">
@@ -255,8 +273,8 @@ menu:
           </div>
         </div>
 
-
-        ## 🌐 Follow Us
+        <comp.Divider />
+        ## Follow Us
 
         Stay updated:  
         [Instagram](#)

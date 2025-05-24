@@ -42,7 +42,7 @@ html {
   h2,
   h3,
   h4 {
-    margin-top: 0.8em;
+    margin-top: 1em;
     margin-bottom: 0.6em;
     scroll-margin-top: 5rem;
     @apply text-base-content relative font-mono;
@@ -58,19 +58,21 @@ html {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 400;
+    text-align: center;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
+    text-align: center;
   }
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 
@@ -79,7 +81,7 @@ html {
   }
 
   p {
-    @apply my-3;
+    @apply my-4;
   }
 
   hr {
