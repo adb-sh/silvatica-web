@@ -5,41 +5,22 @@ export default ({ page, showButton }) => {
         <div class="grid md:grid-cols-2 gap-4">
           <a
             class="btn justify-start"
-            href="/"
+            href="https://www.instagram.com/silvatica_festival"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="ph-light ph-envelope text-2xl" />
-            email
+            <i class="ph-light ph-instagram-logo text-2xl" />
+            @silvatica_festival
           </a>
           <a
             class="btn justify-start"
-            href="/"
+            href="mailto:silvatica.fest@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="ph-light ph-envelope text-2xl" />
-            email
+            silvatica.fest@gmail.com
           </a>
-          <a
-            class="btn justify-start"
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ph-light ph-envelope text-2xl" />
-            email
-          </a>
-          <a
-            class="btn justify-start"
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ph-light ph-envelope text-2xl" />
-            email
-          </a>
-          
         </div>
       </div>
     </div>
