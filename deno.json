@@ -12,6 +12,5 @@
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.4.3/",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.6.3/"
-  },
-  "nodeModulesDir": "auto"
+  }
 }
