@@ -18,13 +18,18 @@ extraNavItems:
     menu:
       header: true
       headerIndex: 2
+  - title: Tickets
+    url: "/#tickets"
+    menu:
+      header: true
+      headerIndex: 3
   - title: CoC
     url: "/#coc"
     menu:
       header: true
-      headerIndex: 3
+      headerIndex: 4
   - title: FAQ
     url: "/#faq"
     menu:
       header: true
-      headerIndex: 4
+      headerIndex: 5

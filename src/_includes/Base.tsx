@@ -32,6 +32,10 @@ export default ({ title, children, search, site, comp, user }) => (
       />
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="stylesheet" href="/main.css" />
+
+      <link rel="stylesheet" type="text/css" href="https://tickets.silvatica.site/silvatica/2025/widget/v1.css" crossorigin />
+      <script type="text/javascript" src="https://tickets.silvatica.site/widget/v1.de.js" async crossorigin></script>
+
       <script src="/regl.min.js"></script>
       <script src="/scrollSpiral.glsl" type="x-shader/x-fragment" id="fragmentShader"></script>
       <script src="/demo2.js"></script>

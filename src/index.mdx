@@ -42,8 +42,13 @@ menu:
 <div class="container mx-auto">
   <div class="flex m-4">
     <div class="w-full p-4">
+
+      <div class="flex justify-center">
+        <a class="btn btn-secondary" href="https://tickets.silvatica.site/silvatica/2025/waitinglist">Jetzt Ticket sichern!</a>
+      </div>
+
       <section data-markdown="true">
-        {/* <h2>🎟️ Tickets</h2> */}
+
 
         {/* Grab your spot before they’re gone!  
         [Buy Tickets](#) */}
@@ -57,7 +62,6 @@ menu:
 
         - **Dates:** August 15–17, 2025  
         - **Location:** <a href="#anreise">Hasenbühl, in Schwäbisch Hall Hessental</a>
-
 
         <comp.Divider />
 
@@ -85,6 +89,17 @@ menu:
         </div>
 
         {/* <comp.ImageCarousel /> */}
+
+        <comp.Divider />
+        <h2 id="tickets">Tickets</h2>
+        <pretix-widget event="https://tickets.silvatica.site/silvatica/2025/" single-item-select="button"></pretix-widget>
+        <noscript>
+          <div class="pretix-widget">
+            <div class="pretix-widget-info-message">
+              JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://tickets.silvatica.site/silvatica/2025/">click here</a>.
+            </div>
+          </div>
+        </noscript>
 
         <comp.Divider />
         <h2 id="coc" class="text-center">Code of Conduct</h2>
