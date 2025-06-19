@@ -24,7 +24,7 @@ html {
 [data-markdown="true"] {
   a {
     text-decoration: underline;
-    @apply text-info;
+    @apply text-info break-all;
   }
   ul {
     margin: 0.5rem 0.5rem 0.5rem 1.5rem;
