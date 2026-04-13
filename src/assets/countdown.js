@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-08-15T00:10:00").getTime();
+const targetDate = new Date("2026-08-07T00:10:00").getTime();
 
 function updateCountdownDigit(element, value) {
   if (!element) return;

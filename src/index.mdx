@@ -5,9 +5,9 @@ menu:
   header: false
 ---
 
-<div class="h-screen w-full relative isolate bg-cyan-900 shadow-2xl">
+<div class="h-screen w-full relative isolate bg-amber-900 shadow-2xl">
   <canvas id="webgl" class="w-full h-full absolute opacity-60"></canvas>
-  <div class="relative h-full mix-blend-difference">
+  <div class="relative h-full shadow-3xl">
     <div class="sticky flex flex-col items-center top-1/4 py-20 px-5 gap-10">
       <img src="/silvatica-white.webp" class="w-md" />
       <comp.Countdown />
@@ -15,8 +15,8 @@ menu:
   </div>
 </div>
 
-
 {/* <div class="h-[200vh] relative mt-[-100vh] z-[-1] shadow-2xl">
+
   <div class="bg-amber-900 sticky top-0">
     <video autoplay muted loop class="opacity-70 h-screen w-full object-cover">
       <source src="/media/videos/recap-2024-day-02.webm" />
@@ -29,7 +29,7 @@ menu:
 <div class="h-[200vh] relative mt-[-100vh] z-[-2]">
   <div class="bg-amber-900 sticky top-0">
     <video autoplay muted loop playsinline class="opacity-80 h-screen w-full object-cover">
-      <source src="/media/videos/recap-2024-day-03.webm" />
+      <source src="/media/videos/recap-2025.webm" />
     </video>
   </div>
   <div class="absolute bottom-0 mix-blend-color-dodge w-full p-10 text-center">
@@ -43,25 +43,20 @@ menu:
   <div class="flex m-4">
     <div class="w-full p-4">
 
-      <div class="flex justify-center">
-        {/* <a class="btn btn-secondary" href="https://tickets.silvatica.site/silvatica/2025/waitinglist">Jetzt Ticket sichern!</a> */}
+      {/* <div class="flex justify-center">
         <a class="btn btn-secondary" href="/#tickets">Jetzt Ticket sichern!</a>
       </div>
+      */}
 
       <section data-markdown="true">
 
 
-        {/* Grab your spot before they’re gone!  
+        {/* Grab your spot before they’re gone!
         [Buy Tickets](#) */}
-
-{/* 
-        ## 🎶 Lineup
-
-        Announcing soon — expect soul-soothing beats, local legends, and forest-shaking headliners. */}
 
         <h2 id="info" class="text-center">Info</h2>
 
-        - **Dates:** August 15–17, 2025  
+        - **Dates:** August 07–09, 2026
         - **Location:** <a href="#anreise">Hasenbühl, in Schwäbisch Hall Hessental</a>
 
         <comp.Divider />
@@ -70,18 +65,18 @@ menu:
         <div class="flex flex-col gap-10 text-lg">
           <div class="flex items-center lg:gap-10 max-lg:flex-col-reverse">
             Das Silvatica Festival lädt ein zu einem Wochenende voller Musik, Kunst und gemeinsamer Erlebnisse. Es ist ein Ort für kunst- und musikbegeisterte Menschen, um Zeit miteinander zu verbringen, zu genießen und sich auszutauschen. Im Mittelpunkt steht dabei die Musik: Ab dem Mittag spielen verschiedene Live-Bands und Künstler*innen, bevor elektronische Klänge die Nacht zum Leben erwecken.
-            <img class="h-48 aspect-[3/2] object-cover max-lg:w-full" src="/media/images/photo_5199641241837496798_y.jpg" />
+            <img class="h-48 aspect-[3/2] object-cover max-lg:w-full" src="/media/images/2026/04.jpg" />
           </div>
           <div class="flex items-center lg:gap-10 max-lg:flex-col">
-            <img class="h-64 aspect-[3/2] object-cover max-lg:w-full" src="/media/images/photo_5199641241837496797_y.jpg" />
+            <img class="h-64 aspect-[3/2] object-cover max-lg:w-full" src="/media/images/2026/15.jpg" />
             Neben dem musikalischen Programm erwartet euch ein vielfältiges Angebot an Workshops und kreativen Aktivitäten – von Siebdruck über Yoga bis hin zu liebevoll gestalteten Bastelaktionen. Wer zwischendurch eine Pause braucht, kann sich auf unserem gemütlich eingerichteten Gelände zurücklehnen, bei einer Tasse Kaffee, einem Stück Pizza oder einem kühlen Getränk entspannen und die Atmosphäre genießen.
           </div>
           <div class="flex items-center lg:gap-10 max-lg:flex-col-reverse">
             Ein besonderes Anliegen ist uns die Förderung lokaler Kunst- und Kulturschaffender. So sind unter anderem das Orte- und das La Volta-Kollektiv Teil unseres Festivals und bereichern das Programm mit ihren Beiträgen.
-            <img class="h-64 aspect-[2/1] object-cover max-lg:w-full" src="/media/images/photo_5199641241837496799_y.jpg" />
+            <img class="h-64 aspect-[2/1] object-cover max-lg:w-full" src="/media/images/2026/23.jpg" />
           </div>
           <div class="flex items-center lg:gap-10 max-lg:flex-col">
-            <img class="h-64 aspect-square object-cover max-lg:w-full" src="/media/images/photo_5199641241837496787_y.jpg" />
+            <img class="h-64 aspect-square object-cover max-lg:w-full" src="/media/images/2026/IMG_7609.jpg" />
             Silvatica spannt einen Bogen zwischen gemeinschaftlichem Tun, entspannter Stimmung und musikalischem Erleben. Offenheit, Gemeinschaft und ein unvergessliches Miteinander stehen für uns im Zentrum. Das Festival ist ein Herzensprojekt – von Freund*innen für Freund*innen und alle, die dazukommen möchten.
           </div>
           <div class="text-center">
@@ -93,7 +88,10 @@ menu:
 
         <comp.Divider />
         <h2 id="tickets">Tickets</h2>
-        <pretix-widget event="https://tickets.silvatica.site/silvatica/2025/" single-item-select="button"></pretix-widget>
+        <pretix-widget event="https://tickets.silvatica.site/silvatica/2026/" single-item-select="button"></pretix-widget>
+        <div role="alert" class="alert alert-info">
+          <span>Bald verfügbar!</span>
+        </div>
         <noscript>
           <div class="pretix-widget">
             <div class="pretix-widget-info-message">
@@ -292,16 +290,16 @@ menu:
         <comp.Divider />
         ## Follow Us
 
-        Stay updated:  
+        Stay updated:
         [Instagram](https://www.instagram.com/silvatica_festival)
 
         ---
 
         _Silvatica is a zero-waste, community-driven experience. Come as you are, leave no trace._
 
-      
+
       </section>
     </div>
+
   </div>
 </div>
-

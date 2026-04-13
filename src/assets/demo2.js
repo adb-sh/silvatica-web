@@ -23,7 +23,7 @@
 
   // Loading a texture
   var img = new Image();
-  img.src = "/img1.jpg";
+  img.src = "/tribal.webp";
   img.onload = function () {
     setTimeout(function () {
       document.body.classList.remove("loading");
