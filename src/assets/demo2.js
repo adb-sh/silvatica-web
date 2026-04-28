@@ -23,7 +23,7 @@
 
   // Loading a texture
   var img = new Image();
-  img.src = "/tribal.webp";
+  img.src = "/falter-pattern.jpeg";
   img.onload = function () {
     setTimeout(function () {
       document.body.classList.remove("loading");
