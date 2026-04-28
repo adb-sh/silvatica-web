@@ -5,7 +5,7 @@
   const map = L.map("map", {
     zoomDelta: 0.5,
     zoomSnap: 0.5,
-  }).setView([49.1595489, 9.9720503], 17);
+  }).setView([49.1595489, 9.9720503], 17.5);
 
   // load openstreetmap tiles
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {

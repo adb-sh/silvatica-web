@@ -11,7 +11,7 @@ export default () => (
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-    <div id="map" class="h-[400px] max-h-[90vh] z-[0]"></div>
+    <div id="map" class="h-[500px] max-h-[90vh] z-[0]"></div>
     <script src="/map.js"></script>
   </>
 );
