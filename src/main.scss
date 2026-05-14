@@ -22,7 +22,7 @@ html {
 }
 
 [data-markdown="true"] {
-  a {
+  a:not(.btn) {
     text-decoration: underline;
     @apply text-info break-all;
   }
