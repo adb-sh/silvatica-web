@@ -1,7 +1,7 @@
 export default ({ search, site }) => (
   <footer class="bg-neutral dark:bg-secondary-dark">
     <div class="flex justify-center p-5">
-      <img src="/falter-white.webp" class="h-12 py-2" alt="" />
+      <img src="/falter-white.webp" class="h-12 py-2" />
     </div>
     <div class="container mx-auto text-white px-8 py-4 flex justify-between flex-wrap">
       <span class="copyright">
