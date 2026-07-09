@@ -7,6 +7,7 @@ export default ({ ...props }) => (
             <img
               src="/silvatica-white.webp"
               class="h-full py-2"
+              alt="Silvatica Festival – zur Startseite"
             />
             {/* <p class="text-xl font-medium">
               {props.site.title}
@@ -45,6 +46,7 @@ export default ({ ...props }) => (
                 <img
                   src="/falter-white.webp"
                   class="h-12 py-2"
+                  alt="Silvatica Festival – zur Startseite"
                 />
                 {/* <p>{props.site.title}</p> */}
               </a>

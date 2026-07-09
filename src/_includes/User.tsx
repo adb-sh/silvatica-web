@@ -75,12 +75,14 @@ export default ({ page, search, comp, children, ...props }) => (
                     page.data.social?.find((s) => s.name === "github").title
                   }&theme=tokyonight&show_icons=true&hide_border=true&count_private=true`}
                   class="w-96 grow"
+                  alt={`GitHub-Statistik von ${page.data.social?.find((s) => s.name === "github").title}`}
                 />
                 <img
                   src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${
                     page.data.social?.find((s) => s.name === "github").title
                   }&theme=tokyonight&show_icons=true&hide_border=true&layout=compact`}
                   class="w-96 grow"
+                  alt={`Meistgenutzte Programmiersprachen von ${page.data.social?.find((s) => s.name === "github").title}`}
                 />
               </div>
             </div>
