@@ -1,8 +1,8 @@
 export default ({ faq }) => (
   <section>
-    {faq.map(({ title, items }) => (
+    {faq.map(({ title, items, id }) => (
       <>
-        <h3 class="text-xl font-bold mt-8 mb-4">{title}</h3>
+        <h3 id={id} class="text-xl font-bold mt-8 mb-4">{title}</h3>
         <div class="join join-vertical bg-base-100">
           {items.map(({ title, body }) => (
             <div class="collapse collapse-arrow join-item border border-base-300">
