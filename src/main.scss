@@ -131,10 +131,10 @@ html {
     text-align: center; margin: 0 0 1rem; letter-spacing: .03em;
   }
 
-  // stage headers (desktop)
+  // stage headers (desktop); top offset = height of the fixed site navbar (4rem)
   .tt-head {
     display: grid; grid-template-columns: var(--tt-gutter) repeat(3, minmax(0, 1fr));
-    gap: 0 .5rem; position: sticky; top: 0; z-index: 4;
+    gap: 0 .5rem; position: sticky; top: 4rem; z-index: 4;
     background: oklch(var(--b1)); padding: .4rem 0 .5rem;
   }
   .tt-h {
@@ -197,7 +197,9 @@ html {
   @media (max-width: 719.98px) {
     .tt-tabs {
       display: flex; gap: .4rem;
-      position: sticky; top: 0; z-index: 5;
+      // top offset = height of the fixed site navbar (4rem), so the switcher
+      // docks below it instead of sliding underneath while scrolling
+      position: sticky; top: 4rem; z-index: 5;
       background: oklch(var(--b1)); padding: .6rem 0 .7rem; margin: 0 0 1.2rem;
       border-bottom: 1px solid oklch(var(--b3));
     }
