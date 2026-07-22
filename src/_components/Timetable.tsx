@@ -4,7 +4,7 @@
 // the checked stage are revealed via group-has-[...] variants, the active tab
 // is highlighted via named peer-checked variants.
 
-type Slot = [string, string]; // ["18:00–19:00", "Artist"]
+type Slot = [string, string] | [string, string, "all"]; // ["18:00–19:00", "Artist"]; "all" = spans every stage
 type Day = { day: string; slots: Slot[][] }; // slots[stageIndex] = list of slots
 
 const STAGES = [
@@ -51,8 +51,13 @@ const STAGE_UI = [
 const GRID_COLS = "grid-cols-[3.6rem_1fr] md:grid-cols-[3.6rem_repeat(3,minmax(0,1fr))]";
 const STICKY = "sticky top-16 bg-base-100"; // top-16 = height of the fixed site navbar
 const ACT_BASE =
-  "relative z-[1] col-start-2 my-px hidden md:flex flex-col justify-center gap-0.5 " +
+  "relative z-[1] col-start-2 my-px flex-col justify-center gap-0.5 " +
   "overflow-hidden border border-solid border-base-300 border-l-2 bg-base-200 px-2 py-1";
+// acts on one stage: hidden on mobile unless their stage is selected
+const ACT_STAGED = "hidden md:flex";
+// acts on all stages (e.g. workshops): span the three stage columns, always
+// visible, grayed out so they read as background programme, not a stage act
+const ACT_ALL = "flex md:[grid-column:2/span_3] md:items-center md:text-center border-l-base-content/40 bg-base-content/10";
 const TAB_BASE =
   "flex-1 cursor-pointer select-none border border-solid border-base-300 bg-base-200 " +
   "px-1 py-2 text-center font-mono text-xs leading-tight tracking-wide text-base-content";
@@ -77,7 +82,7 @@ const DAYS: Day[] = [
   {
     day: "Sonntag · 09.08.2026",
     slots: [
-      [["11:00–12:00", "Workshop"], ["13:30–15:00", "Blinki"], ["15:00–16:30", "Red Sun Music"], ["16:30–18:00", "Feli"], ["18:00–19:30", "Millson"], ["19:30–21:00", "Special K"]],
+      [["11:00–12:00", "Workshop", "all"], ["13:30–15:00", "Blinki"], ["15:00–16:30", "Red Sun Music"], ["16:30–18:00", "Feli"], ["18:00–19:30", "Millson"], ["19:30–21:00", "Special K"]],
       [],
       [["13:00–14:00", "Nico Gumpel"], ["14:30–15:30", "Ten Faced"], ["16:30–18:00", "HAZE'EVOT"]],
     ],
@@ -110,14 +115,14 @@ export default () => (
     <div>
       {DAYS.map((d) => {
         // Collect acts and the day's time window
-        const acts: { si: number; s: number; e: number; name: string; range: string }[] = [];
+        const acts: { si: number; s: number; e: number; name: string; range: string; all: boolean }[] = [];
         let mn = Infinity, mx = -Infinity;
         d.slots.forEach((slots, si) =>
-          slots.forEach(([range, name]) => {
+          slots.forEach(([range, name, scope]) => {
             const [a, b] = range.split("–").map((x) => x.trim());
             const s = toMin(a), e = toMin(b);
             mn = Math.min(mn, s); mx = Math.max(mx, e);
-            acts.push({ si, s, e, name, range });
+            acts.push({ si, s, e, name, range, all: scope === "all" });
           })
         );
         mn = Math.floor(mn / 60) * 60; // round down to full hour
@@ -129,7 +134,9 @@ export default () => (
         for (let t = mn; t <= mx; t += 60) hours.push(t);
         const halves: number[] = [];
         for (let t = mn + 30; t < mx; t += 60) halves.push(t);
-        const empty = d.slots.map((s, si) => (s.length ? -1 : si)).filter((v) => v >= 0);
+        // a stage counts as empty only if it has no own slots AND no all-stage act covers the day
+        const hasAll = acts.some((a) => a.all);
+        const empty = hasAll ? [] : d.slots.map((s, si) => (s.length ? -1 : si)).filter((v) => v >= 0);
 
         return (
           <section class="mb-12">
@@ -159,14 +166,14 @@ export default () => (
                 const brk = /^pause$/i.test(a.name);
                 return (
                   <article
-                    class={`${ACT_BASE} ${STAGE_UI[a.si].act}${brk ? " border-dashed bg-transparent" : ""}`}
+                    class={`${ACT_BASE} ${a.all ? ACT_ALL : `${ACT_STAGED} ${STAGE_UI[a.si].act}`}${brk ? " border-dashed bg-transparent" : ""}`}
                     style={`grid-row:${rowOf(a.s)}/${rowOf(a.e)}`}
                   >
                     {/* Stage name for assistive tech — the desktop header is aria-hidden
                         and the tab labels are display:none on desktop. */}
-                    <span class="sr-only">{STAGES[a.si].name}: </span>
-                    <span class="text-[.7rem] leading-tight text-base-content/60 tabular-nums">{a.range}</span>
-                    <span class={`text-[.9rem] leading-tight [overflow-wrap:anywhere] ${brk ? "font-normal italic text-base-content/60" : "font-semibold"}`}>
+                    <span class="sr-only">{a.all ? "Alle Bühnen" : STAGES[a.si].name}: </span>
+                    <span class={`text-[.7rem] leading-tight tabular-nums ${a.all ? "text-base-content/40" : "text-base-content/60"}`}>{a.range}</span>
+                    <span class={`text-[.9rem] leading-tight [overflow-wrap:anywhere] ${brk ? "font-normal italic text-base-content/60" : a.all ? "font-normal text-base-content/60" : "font-semibold"}`}>
                       {a.name}
                     </span>
                   </article>
