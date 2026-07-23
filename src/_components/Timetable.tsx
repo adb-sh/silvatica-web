@@ -48,7 +48,8 @@ const STAGE_UI = [
 ];
 
 // Shared utility bundles
-const GRID_COLS = "grid-cols-[3.6rem_1fr] md:grid-cols-[3.6rem_repeat(3,minmax(0,1fr))]";
+const GRID_COLS =
+  "grid-cols-[3.6rem_1fr] md:grid-cols-[3.6rem_repeat(3,minmax(0,1fr))]";
 const STICKY = "sticky top-16 bg-base-100"; // top-16 = height of the fixed site navbar
 const ACT_BASE =
   "relative z-[1] col-start-2 my-px flex-col justify-center gap-0.5 " +
@@ -57,7 +58,8 @@ const ACT_BASE =
 const ACT_STAGED = "hidden md:flex";
 // acts on all stages (e.g. workshops): span the three stage columns, always
 // visible, grayed out so they read as background programme, not a stage act
-const ACT_ALL = "flex md:[grid-column:2/span_3] md:items-center md:text-center border-l-base-content/40 bg-base-content/10";
+const ACT_ALL =
+  "flex md:[grid-column:2/span_3] md:items-center md:text-center border-l-base-content/40 bg-base-content/10";
 const TAB_BASE =
   "flex-1 cursor-pointer select-none border border-solid border-base-300 bg-base-200 " +
   "px-1 py-2 text-center font-mono text-xs leading-tight tracking-wide text-base-content";
@@ -66,25 +68,78 @@ const DAYS: Day[] = [
   {
     day: "Freitag · 07.08.2026",
     slots: [
-      [["18:00–19:00", "Kosmonaut"], ["19:00–20:00", "Amara"], ["20:00–21:30", "ANTI ANTI"], ["21:30–23:00", "CHRIZZ STOFF"], ["23:00–00:30", "malfunction b2b Ben Boblenz"], ["00:30–02:00", "LARNIE"]],
-      [["19:00–21:30", "Arian b2b Jausezeit b2b Kevin De Souza"], ["21:30–23:00", "Benebelt b2b Findus"], ["23:00–00:30", "Garlic Ghost b2b Grinseriese"], ["00:30–02:00", "Amnesiac"]],
-      [["18:00–19:00", "George John"], ["19:30–20:30", "Mechthild"], ["21:00–22:00", "Zweilaster"], ["22:30–23:30", "ildikó"]],
+      [
+        ["18:00–19:00", "Kosmonaut"],
+        ["19:00–20:00", "Amara"],
+        ["20:00–21:30", "ANTI ANTI"],
+        ["21:30–23:00", "CHRIZZ STOFF"],
+        ["23:00–00:30", "malfunction b2b Ben Boblenz"],
+        ["00:30–02:00", "LARNIE"],
+      ],
+      [
+        ["19:00–21:30", "Arian b2b Jausezeit b2b Kevin De Souza"],
+        ["21:30–23:00", "Benebelt b2b Findus"],
+        ["23:00–00:30", "Garlic Ghost b2b Grinseriese"],
+        ["00:30–02:00", "Amnesiac"],
+      ],
+      [
+        ["18:00–19:00", "George John"],
+        ["19:30–20:30", "Mechthild"],
+        ["21:00–22:00", "Zweilaster"],
+        ["22:30–23:30", "ildikó"],
+      ],
     ],
   },
   {
     day: "Samstag · 08.08.2026",
     slots: [
-      [["13:00–14:00", "Ferdi Sophie"], ["14:00–15:30", "MABOUGE"], ["15:30–17:00", "DJ Kind"], ["17:00–18:30", "DJ Sami"], ["18:30–20:00", "10A100"], ["20:00–21:30", "Flowra"], ["21:30–23:00", "moneten b2b flanke8"], ["23:00–00:30", "Kichererbsenstampf"], ["00:30–02:00", "BUFFY"]],
-      [["17:00–18:30", "Finno"], ["18:30–20:00", "Carlo Carluci"], ["20:00–21:30", "JNSRL"], ["21:30–23:00", "DJ Umleitung"], ["23:00–00:30", "LUMARO b2b ADS"], ["00:30–02:00", "MichlBichl b2b Sam K."]],
-      [["12:00–13:00", "Takt e.V."], ["13:30–14:30", "shuk"], ["14:30–18:00", "Pause"], ["18:00–19:00", "Sloe Paul"], ["19:30–20:30", "Zsolt"], ["21:00–22:00", "Ingo & Foerb"], ["22:30–23:30", "NeuRuTics"]],
+      [
+        ["13:00–14:00", "Ferdi Sophie"],
+        ["14:00–15:30", "MABOUGE"],
+        ["15:30–17:00", "DJ Kind"],
+        ["17:00–18:30", "DJ Sami"],
+        ["18:30–20:00", "10A100"],
+        ["20:00–21:30", "Flowra"],
+        ["21:30–23:00", "moneten b2b flanke8"],
+        ["23:00–00:30", "Kichererbsenstampf"],
+        ["00:30–02:00", "BUFFY"],
+      ],
+      [
+        ["17:00–18:30", "Finno"],
+        ["18:30–20:00", "Carlo Carluci"],
+        ["20:00–21:30", "JNSRL"],
+        ["21:30–23:00", "DJ Umleitung"],
+        ["23:00–00:30", "LUMARO b2b ADS"],
+        ["00:30–02:00", "MichlBichl b2b Sam K."],
+      ],
+      [
+        ["12:00–13:00", "Takt e.V."],
+        ["13:30–14:30", "shuk"],
+        ["14:30–18:00", "Pause"],
+        ["18:00–19:00", "Sloe Paul"],
+        ["19:30–20:30", "Zsolt"],
+        ["21:00–22:00", "Ingo & Foerb"],
+        ["22:30–23:30", "NeuRuTics"],
+      ],
     ],
   },
   {
     day: "Sonntag · 09.08.2026",
     slots: [
-      [["11:00–12:00", "Workshop", "all"], ["13:30–15:00", "Blinki"], ["15:00–16:30", "Red Sun Music"], ["16:30–18:00", "Feli"], ["18:00–19:30", "Millson"], ["19:30–21:00", "Special K"]],
+      [
+        ["11:00–12:00", "Workshop", "all"],
+        ["13:30–15:00", "Blinki"],
+        ["15:00–16:30", "Red Sun Music"],
+        ["16:30–18:00", "Feli"],
+        ["18:00–19:30", "Millson"],
+        ["19:30–21:00", "Special K"],
+      ],
       [],
-      [["13:00–14:00", "Nico Gumpel"], ["14:30–15:30", "Ten Faced"], ["16:30–18:00", "HAZE'EVOT"]],
+      [
+        ["13:00–14:00", "Nico Gumpel"],
+        ["14:30–15:30", "Ten Faced"],
+        ["16:30–18:00", "HAZE'EVOT"],
+      ],
     ],
   },
 ];
@@ -96,18 +151,32 @@ const toMin = (hhmm: string) => {
 };
 const fmt = (t: number) => {
   t %= 1440;
-  return String(Math.floor(t / 60)).padStart(2, "0") + ":" + String(t % 60).padStart(2, "0");
+  return (
+    String(Math.floor(t / 60)).padStart(2, "0") +
+    ":" +
+    String(t % 60).padStart(2, "0")
+  );
 };
 
 export default () => (
   <div class="group">
     {/* CSS-only stage switch (mobile): a native radio group; no JavaScript. */}
-    <fieldset class={`flex md:hidden ${STICKY} z-[5] m-0 mb-5 min-w-0 gap-1.5 border-x-0 border-t-0 border-b border-solid border-base-300 px-0 pt-2.5 pb-3`}>
+    <fieldset
+      class={`flex md:hidden ${STICKY} z-[5] m-0 mb-5 min-w-0 gap-1.5 border-x-0 border-t-0 border-b border-solid border-base-300 px-0 pt-2.5 pb-3`}
+    >
       <legend class="sr-only">Bühne wählen</legend>
       {STAGES.map((s, i) => (
         <>
-          <input type="radio" name="tt-stage" id={STAGE_UI[i].id} class={`sr-only ${STAGE_UI[i].peer}`} checked={i === 0} />
-          <label class={`${TAB_BASE} ${STAGE_UI[i].tab}`} for={STAGE_UI[i].id}>{s.short}</label>
+          <input
+            type="radio"
+            name="tt-stage"
+            id={STAGE_UI[i].id}
+            class={`sr-only ${STAGE_UI[i].peer}`}
+            checked={i === 0}
+          />
+          <label class={`${TAB_BASE} ${STAGE_UI[i].tab}`} for={STAGE_UI[i].id}>
+            {s.short}
+          </label>
         </>
       ))}
     </fieldset>
@@ -115,19 +184,29 @@ export default () => (
     <div>
       {DAYS.map((d) => {
         // Collect acts and the day's time window
-        const acts: { si: number; s: number; e: number; name: string; range: string; all: boolean }[] = [];
-        let mn = Infinity, mx = -Infinity;
+        const acts: {
+          si: number;
+          s: number;
+          e: number;
+          name: string;
+          range: string;
+          all: boolean;
+        }[] = [];
+        let mn = Infinity,
+          mx = -Infinity;
         d.slots.forEach((slots, si) =>
           slots.forEach(([range, name, scope]) => {
             const [a, b] = range.split("–").map((x) => x.trim());
-            const s = toMin(a), e = toMin(b);
-            mn = Math.min(mn, s); mx = Math.max(mx, e);
+            const s = toMin(a),
+              e = toMin(b);
+            mn = Math.min(mn, s);
+            mx = Math.max(mx, e);
             acts.push({ si, s, e, name, range, all: scope === "all" });
-          })
+          }),
         );
         mn = Math.floor(mn / 60) * 60; // round down to full hour
-        mx = Math.ceil(mx / 60) * 60;  // round up to full hour
-        const rows = (mx - mn) / 30;   // 30-minute grid
+        mx = Math.ceil(mx / 60) * 60; // round up to full hour
+        const rows = (mx - mn) / 30; // 30-minute grid
         const rowOf = (t: number) => (t - mn) / 30 + 1;
 
         const hours: number[] = [];
@@ -136,28 +215,51 @@ export default () => (
         for (let t = mn + 30; t < mx; t += 60) halves.push(t);
         // a stage counts as empty only if it has no own slots AND no all-stage act covers the day
         const hasAll = acts.some((a) => a.all);
-        const empty = hasAll ? [] : d.slots.map((s, si) => (s.length ? -1 : si)).filter((v) => v >= 0);
+        const empty = hasAll
+          ? []
+          : d.slots.map((s, si) => (s.length ? -1 : si)).filter((v) => v >= 0);
 
         return (
           <section class="mb-12">
-            <h3 class="mt-0 mb-4 text-center tracking-wide">{d.day}</h3>
+            <h2 class="mt-0 mb-4 text-center tracking-wide">{d.day}</h2>
 
             {/* Stage headers (desktop) */}
-            <div class={`hidden md:grid ${GRID_COLS} ${STICKY} z-[4] gap-x-2 pt-1.5 pb-2`} aria-hidden="true">
+            <div
+              class={`hidden md:grid ${GRID_COLS} ${STICKY} z-[4] gap-x-2 pt-1.5 pb-2`}
+              aria-hidden="true"
+            >
               <span></span>
               {STAGES.map((s, i) => (
-                <div class={`border-2 border-solid px-1 py-2 text-center font-mono text-xs tracking-wide text-base-content ${STAGE_UI[i].head}`}>
+                <div
+                  class={`border-2 border-solid px-1 py-2 text-center font-mono text-xs tracking-wide text-base-content ${STAGE_UI[i].head}`}
+                >
                   {s.name}
                 </div>
               ))}
             </div>
 
             {/* Time grid */}
-            <div class={`relative mt-3 grid ${GRID_COLS} gap-x-2`} style={`grid-template-rows:repeat(${rows},2.25rem)`}>
-              {hours.map((t) => <div class="pointer-events-none col-span-full h-0 self-start border-t border-solid border-base-content/20" style={`grid-row:${rowOf(t)}`}></div>)}
-              {halves.map((t) => <div class="pointer-events-none col-span-full h-0 self-start border-t border-solid border-base-content/10" style={`grid-row:${rowOf(t)}`}></div>)}
+            <div
+              class={`relative mt-3 grid ${GRID_COLS} gap-x-2`}
+              style={`grid-template-rows:repeat(${rows},2.25rem)`}
+            >
               {hours.map((t) => (
-                <div class="pointer-events-none col-start-1 h-0 -translate-y-1/2 self-start justify-self-end whitespace-nowrap pr-2 text-[.72rem] leading-none text-base-content/55 tabular-nums" style={`grid-row:${rowOf(t)}`}>
+                <div
+                  class="pointer-events-none col-span-full h-0 self-start border-t border-solid border-base-content/20"
+                  style={`grid-row:${rowOf(t)}`}
+                ></div>
+              ))}
+              {halves.map((t) => (
+                <div
+                  class="pointer-events-none col-span-full h-0 self-start border-t border-solid border-base-content/10"
+                  style={`grid-row:${rowOf(t)}`}
+                ></div>
+              ))}
+              {hours.map((t) => (
+                <div
+                  class="pointer-events-none col-start-1 h-0 -translate-y-1/2 self-start justify-self-end whitespace-nowrap pr-2 text-[.72rem] leading-none text-base-content/55 tabular-nums"
+                  style={`grid-row:${rowOf(t)}`}
+                >
                   {fmt(t)}
                 </div>
               ))}
@@ -171,9 +273,17 @@ export default () => (
                   >
                     {/* Stage name for assistive tech — the desktop header is aria-hidden
                         and the tab labels are display:none on desktop. */}
-                    <span class="sr-only">{a.all ? "Alle Bühnen" : STAGES[a.si].name}: </span>
-                    <span class={`text-[.7rem] leading-tight tabular-nums ${a.all ? "text-base-content/40" : "text-base-content/60"}`}>{a.range}</span>
-                    <span class={`text-[.9rem] leading-tight [overflow-wrap:anywhere] ${brk ? "font-normal italic text-base-content/60" : a.all ? "font-normal text-base-content/60" : "font-semibold"}`}>
+                    <span class="sr-only">
+                      {a.all ? "Alle Bühnen" : STAGES[a.si].name}:{" "}
+                    </span>
+                    <span
+                      class={`text-[.7rem] leading-tight tabular-nums ${a.all ? "text-base-content/40" : "text-base-content/60"}`}
+                    >
+                      {a.range}
+                    </span>
+                    <span
+                      class={`text-[.9rem] leading-tight [overflow-wrap:anywhere] ${brk ? "font-normal italic text-base-content/60" : a.all ? "font-normal text-base-content/60" : "font-semibold"}`}
+                    >
                       {a.name}
                     </span>
                   </article>
