@@ -70,7 +70,7 @@ const DAYS: Day[] = [
     slots: [
       [
         ["18:00–19:00", "Kosmonaut"],
-        ["19:00–20:00", "Amara"],
+        ["19:00–20:00", "Gyra"],
         ["20:00–21:30", "ANTI ANTI"],
         ["21:30–23:00", "CHRIZZ STOFF"],
         ["23:00–00:30", "malfunction b2b Ben Boblenz"],
@@ -94,7 +94,7 @@ const DAYS: Day[] = [
     day: "Samstag · 08.08.2026",
     slots: [
       [
-        ["13:00–14:00", "Ferdi Sophie"],
+        ["13:00–14:00", "Feso"],
         ["14:00–15:30", "MABOUGE"],
         ["15:30–17:00", "DJ Kind"],
         ["17:00–18:30", "DJ Sami"],
@@ -136,7 +136,7 @@ const DAYS: Day[] = [
       ],
       [],
       [
-        ["13:00–14:00", "Nico Gumpel"],
+        ["13:00–14:00", "Gunder"],
         ["14:30–15:30", "Ten Faced"],
         ["16:30–18:00", "HAZE'EVOT"],
       ],
